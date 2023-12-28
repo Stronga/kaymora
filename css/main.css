@@ -121,11 +121,11 @@ color: rgb(255, 255, 255);
 }
 
 :where(.one, .two, .three, .four) .info li a i {
-  /* display: flex;
+  display: flex;
   z-index: 999;
   will-change: transform;
   transform-style: preserve-3d;
-  transition: 0.5s ease all; */
+  transition: 0.5s ease all;
 }
 
 :where(.one, .two, .three, .four) .info {
@@ -199,7 +199,7 @@ color: rgb(255, 255, 255);
 .three:hover .info li:first-child,
 .four:hover .info li:first-child {
  
-  transform: translateY(-135px);
+  transform: translateY(-130px);
   opacity: 1;
 }
 .one:hover .info li:nth-child(2),
@@ -207,7 +207,7 @@ color: rgb(255, 255, 255);
 .three:hover .info li:nth-child(2),
 .four:hover .info li:nth-child(2) {
   opacity: 1;
-  transform: translateY(-135px);
+  transform: translateY(-130px);
   transition-delay: 0.35s;
 }
 .one:hover .info li:nth-child(3),
@@ -215,8 +215,7 @@ color: rgb(255, 255, 255);
 .three:hover .info li:nth-child(3),
 .four:hover .info li:nth-child(3) {
   opacity: 1;
-  transform: translateY(-135px);
-  transition-delay: 0.45s;
+  transform: translateY(-130px);
   transition-delay: 0.45s;
 }
 .one:hover .info li:nth-child(4),
@@ -224,8 +223,7 @@ color: rgb(255, 255, 255);
 .three:hover .info li:nth-child(4),
 .four:hover .info li:nth-child(4) {
   opacity: 1;
-  transform: translateY(-135px);
-  transition-delay: 0.35s;
+  transform: translateY(-130px);
   transition-delay: 0.55s;
 }
 
@@ -234,8 +232,7 @@ color: rgb(255, 255, 255);
 .three:hover .info li:nth-child(5),
 .four:hover .info li:nth-child(5) {
   opacity: 1;
-  transform: translateY(-135px);
-  transition-delay: 0.35s;
+  transform: translateY(-130px);
   transition-delay: 0.65s;
 }
 
@@ -244,8 +241,7 @@ color: rgb(255, 255, 255);
 .three:hover .info li:nth-child(6),
 .four:hover .info li:nth-child(6) {
   opacity: 1;
-  transform: translateY(-135px);
-  transition-delay: 0.35s;
+  transform: translateY(-130px);
   transition-delay: 0.75s;
 }
 
@@ -323,4 +319,77 @@ color: rgb(255, 255, 255);
 .search-input:not(:placeholder-shown) + .search-btn {
   background: #fff;
   color: #cd595a;
+}
+
+
+
+/* side icons */
+:where(.one, .twulo, .three, .four)  ul{
+  position: absolute;
+  top: 25%;
+  text-decoration: none;
+  color: #fff;
+  list-style: none;
+  font-size: 1.5em;
+  /* transform: translateX(-60px); */
+  
+}
+
+:where(.one, .twulo, .three, .four) ul li{
+  transform: translateX(-60px);
+  transition: 0.4s;
+}
+:where(.one, .two, .three, .four):hover ul{
+  /* transform: translateX(0px); */
+}
+
+.one:hover ul li:first-child,
+.two:hover ul li:first-child,
+.three:hover ul li:first-child,
+.four:hover ul li:first-child {
+  transition-delay: 0.25s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+.one:hover ul li:nth-child(2),
+.two:hover ul li:nth-child(2),
+.three:hover ul li:nth-child(2),
+.four:hover ul li:nth-child(2) {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: 0.35s;
+}
+.one:hover ul li:nth-child(3),
+.two:hover ul li:nth-child(3),
+.three:hover ul li:nth-child(3),
+.four:hover ul li:nth-child(3) {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: 0.45s;
+}
+.one:hover ul li:nth-child(4),
+.two:hover ul li:nth-child(4),
+.three:hover ul li:nth-child(4),
+.four:hover ul li:nth-child(4) {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: 0.55s;
+}
+
+.one:hover ul li:nth-child(5),
+.two:hover ul li:nth-child(5),
+.three:hover ul li:nth-child(5),
+.four:hover ul li:nth-child(5) {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: 0.65s;
+}
+
+.one:hover ul li:nth-child(6),
+.two:hover ul li:nth-child(6),
+.three:hover ul li:nth-child(6),
+.four:hover ul li:nth-child(6) {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: 0.75s;
 }
